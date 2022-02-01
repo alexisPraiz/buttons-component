@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d8dd195afb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="navBar.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>    
+    <title>Button Component</title>
+</head>
+<body>
+    <!---==== Nav Bar: Start ====--->
+    <nav class="nav_bar">
+        <div class="nav_bar-top">
+            <p><span>Dev</span>challenge.io</p>
+            <i class='bx bxs-x-circle open-close'></i>
+        </div>
+
+        <div class="nav_bar-buttom">
+            <ul>
+                <li><a href="#">Colors</a></li>
+                <li><a href="#">Typograpy</a></li>
+                <li><a href="#">Spaces</a></li>
+                <li><a href="#"class="anchor_active">Buttons</a></li>
+                <li><a href="#">Inputs</a></li>
+                <li><a href="#">Grid</a></li>
+                <li class="mode">
+                    <div class="moon-sun">
+                        <i class='bx bx-moon moon'></i>
+                        <i class='bx bx-sun sun'></i>
+                    </div>
+                    <span class="mode-text">Dark Mode</span>
+                </li>
+            </ul>
+        </div>
+
+        <div class="footer">
+            <p>&copy;Created by <b>Alexis Praiz</b> - Devchallege.io</p>
+        </div>
+    </nav>
+    <!---==== Nav Bar: End ====--->
+    
+    <!---==== Open-Close navBar: Start ====--->
+    <div class="open_bar-nav">
+        <i class='bx bx-dots-vertical-rounded open_nav open-close'></i>
+    </div>
+    <!---==== Open-close navBar: End ====--->
+
+    <!---==== Principal: Start ====--->
+    <main class="main">
+       <span class="title">Buttons</span>
+        
+        <!---==== Temaplate1: Start ====--->
+        <div class="template1">
+            <div class="content">
+                <span>< Button/></span>
+                <button class="default personalized1">Default</button>
+            </div>
+            
+            <div class="content">
+                <span>&:hover, &focus</span>
+                <button class="default personalized2">Default</button>
+            </div>
+            
+            <div class="content">
+                <span>< Button variant="outline"/></span>
+                <button class="default personalized3" id="special1">Default</button>
+            </div>
+
+            <div class="content">
+                <span>&:hover, &focus</span>
+                <button class="default personalized4" id="special2">Default</button>
+            </div>
+
+            <div class="content">
+                <span>< Button variant="text"/></span>
+                <button class="default personalized5">Default</button>
+            </div>
+
+            <div class="content">
+                <span>&:hover, &focus</span>
+                <button class="default personalized6">Default</button>
+            </div>
+
+            <div class="personalized_column1">
+                <div class="content">
+                    <span>< Button disableShadow/></span>
+                    <button class="default personalized7">Default</button>
+                </div>
+            </div>
+
+            <div class="content">
+                <span>< Button disabled/></span>
+                <button class="default personalized8">Disabled</button>
+            </div>
+
+            <div class="content">
+                <span>< Button variant="text" disabled/></span>
+                <button class="default personalized9">Disabled</button>
+            </div>
+        </div>
+        <!---==== Temaplate1: End ====--->
+        
+        <!---==== Temaplate2: Start ====--->
+        <div class="template2">
+            <div class="content">
+                <span>< Button startIcon="local_grocery_storage"/></span>
+                <button class="personalized10">
+                    <i class='bx bx-cart-alt'></i>
+                    Default
+                </button>
+            </div>
+
+            <div id="content_responsive">
+                <div class="content">
+                    <span>< Button endIcon="local_grocery_storage"/></span>
+                    <button class="personalized11">
+                        Default
+                        <i class='bx bx-cart-alt'></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!---==== Temaplate2: End ====--->
+        
+        <!---==== Temaplate3: Start ====--->
+        <div class="template3">
+            <div class="content">
+                <span>< Button size="sm"/></span>
+                <button class=" default personalized12" id="special3">Default</button>
+            </div>
+
+            <div class="content">
+                <span>< Button size="md"/></span>
+                <button class="default personalized13">Default</button>
+            </div>
+
+            <div class="personalized_column2">
+                <div class="content">
+                    <span>< Button size="lg"/></span>
+                    <button class="default personalized14" id="special4">Default</button>
+                </div>
+            </div>
+
+            <div class="content">
+                <span>< Button color="default"/></span>
+                <button class="default personalized15">Default</button>
+            </div>
+
+            <div class="content">
+                <span>< Button color="primary"/></span>
+                <button class="default personalized16">Default</button>
+            </div>
+
+            <div class="content">
+                <span>< Button color="secondary"/></span>
+                <button class="default personalized17" id="special5">Secondary</button>
+            </div>
+
+            <div class="content">
+                <span>< Button color="danger"/></span>
+                <button class="default personalized18">Danger</button>
+            </div>
+
+            <div class="content">
+                <span>< &hover, &focus/></span>
+                <button class="default personalized19">Default</button>
+            </div>
+
+            <div class="content">
+                <span class="span_mod">.</span>
+                <button class="default personalized20">Default</button>
+            </div>
+
+            <div class="content">
+                <span class="span_mod">.</span>
+                <button class="default" id="special6">Secondary</button>
+            </div>
+
+            <div class="content">
+                <span class="span_mod">.</span>
+                <button class="default personalized22">Danger</button>
+            </div>
+        </div>
+        <!---==== Temaplate3: End ====--->
+
+        <a href="#">Icons: https://material.io/resources/icons/?styles=round</a>
+    </main>
+    <!---==== Principal: End ====--->
+
+<script src="script.js"></script>
+</body>
+</html>
